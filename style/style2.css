@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(242, 0, 255);
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+    cursor: none;
+}
+
+#terminal {
+    border: 1px solid rgb(0, 0, 0);;
+    padding: 10px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+pre{
+white-space: pre-wrap; /*les retours à la ligne */
+text-align: left; 
+margin: 0; 
+}
+
+#cursor {
+    color:rgb(242, 0, 255);
+    animation: blink 1s step-end infinite; /* Animation de clignotement */
+    margin: 0%;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0; /* Rendre le curseur invisible à mi-chemin */
+    }
+}

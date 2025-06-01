@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/Mucem </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="projets.html" class="titre"> Édition Mucem</a>
+        <p class="subtitle"> 2025 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <img src="images/Marieta/img_prez_01.png" class="tab" style="width: 70% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+                            <br>
+                            Édition sur Mohamed El Khatib invité au Mucem pour la saison 2023. 
+                            <br> Cette édition comportant 12 pages, a été réalisée en une semaine.  
+                            <br>
+                        </p> 
+                    </main>
+                </figure> 
+            </div>
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

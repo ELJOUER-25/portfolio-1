@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/bouchonnée </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1><a href="projets.html" class="titre">Bouchonnée</h1></a>
+        <p class="subtitle"> 2025 </p>
+    </main>
+
+    <section class="portfolio">
+        <div class="grille-projet">
+
+            <figure>
+                <img src="images/bouchonnée/img_prez_01.png" class="tab" style="width: 80% ; height:auto;">
+                <img src="images/bouchonnée/img_prez_02.png" class="tab" style="width: 50% ; height:auto;">
+                
+
+                <main class="texte-projet">               
+                    <p>
+                        Dans le cadre de ce projet, nous devions concevoir <br>
+                        l’identité complète d’un vigneron fictif lançant <br>
+                        sa première production : <br> 
+                        <ol> 
+                            <i>
+                                • Un vin rouge,<br> 
+                                • Un vin blanc,<br> 
+                                • Un vin, <br>
+                                • Un rosé,<br>
+                                • Une bière blonde.<br>
+                            </i> 
+                        </ol>
+                    </p> 
+
+                    <p>
+                        Le client, sans nom ni identité préalables, <br>
+                        souhaitait une image originale et moderne,<br>
+                        loin des codes traditionnels du vin, <br>
+                        pour se démarquer de chez les cavistes. <br>
+                    </p>
+                </main>    
+            </figure> 
+        </div>
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/territoire </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1><a href="projets.html" class="titre">Territoire</h1></a>
+        <p class="subtitle"> 2025 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <img src="images/Territoire/img_prez_01.png" class="tab" style="width: 70% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+                            Dans le cadre de notre workshop, nous devions concevoir et produire une édition sur le thème du "Territoire". Il s'agissait de représenter notre territoire : à quoi ressemble-t-il ? 
+                            <br>Comment pouvons-nous le représenter ?
+                            <br>J’ai choisi d’aborder l’urbanisation, les infrastructures et la vie communautaire. 
+                            <br>
+                            <br>À travers cette série de photographies, j’ai voulu illustrer les nouvelles constructions dans ma ville : des terrains autrefois riches en végétation sont peu à peu remplacés par des bâtiments de béton, faisant disparaître une richesse visuelle au profit d’un paysage plus froid.
+                            <br>
+                            <br>
+                            L’édition devait comporter une série de 16 images minimum, en utilisant le médium de notre choix.
+                            <br>
+                        </p> 
+                    
+
+                    </main>
+                </figure> 
+            </div>
+        <img src="images/Territoire/img_prez_02.png" class="tab" style="width: 70% ; height:auto;">    
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

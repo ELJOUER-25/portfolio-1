@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/illustration </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="projets.html" class="titre"> Illustration</a>
+        <p class="subtitle"> 2024 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <img src="images/illustration/1872 × 1400horizontal.png" class="tab" style="width: 70% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+                            <br>
+                            J'ai produit sur Illustrator le vélo Canyon Aeroad,
+                            pour un simple exercice de reproduction.
+                            <br>La sortie de ce modèle a été annoncée par Canyon.
+                            <br>En faisant cet exercice, j'ai voulu faire une annonce fictive en le reproduisant sous la forme d'illustration. 
+                            <br> Je me suis mis une deadline de 2 jours.
+                            <br>
+                        </p> 
+                    </main>
+                </figure> 
+            </div>
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

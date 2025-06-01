@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+            <main>
+                <h1><a href="projets.html" class="titre">Eliot Jouan</h1></a>
+                <p class="subtitle">2024 | 2025</p> 
+            </main>
+    </header>
+
+
+    <section class="portfolio">
+        <div class="grille">
+
+            <figure class="un">
+                <a href="bouchonnée.html" class="tab"> <!-- Remov des pages car si trop de prjets = Over dose -->
+                    <img src="images/bouchonnée/miniature.png" class="tab"
+                    alt="Identité">
+                </a>
+            </figure>
+
+            <figure class="deux">
+                <a href="lebal.html" class="tab">
+                    <img src="images/LEBAL/miniature.png" class="tab"
+                    alt="Identité LEBAL">
+                </a>
+            </figure>
+
+            <figure class="trois">
+                <a href="photographies.html" class="tab">
+                    <img src="images/photographies/miniature.png" class="tab"
+                    alt="Photographies">
+                </a>
+            </figure>
+
+            <figure class="douze">
+                <a href="tarot.html" class="tab">
+                    <img src="images/tarot/miniature.png" class="tab"
+                    alt="Créa jeu de tarot">
+                </a>
+            </figure>
+
+            <figure class="onze">
+                <a href="territoire.html" class="tab">
+                     <img src="images/territoire/miniature.png" class="tab"
+                    alt="édition territoire">
+                </a>
+            </figure>
+
+            <figure class="quatre">
+                <a href="Mucem.html" class="tab">
+                    <img src="images/Marieta/miniature.png" class="tab"
+                    alt="Editions-mucem">
+                </a>
+            </figure>
+
+            <figure class="cinq">
+                <a href="mcba.html" class="tab">
+                    <img src="images/MCBA/miniature.png" class="tab"
+                    alt="Editions-MCBA">
+                </a>
+            </figure>
+
+            <figure class="sept">
+                <a href="ia.html" class="tab">
+                    <img src="images/IA/miniature_3.png" class="tab"
+                    alt="IA">
+                </a>
+            </figure>
+
+            <figure class="six">
+                <a href="brochurecesca.html" class="tab">
+                    <img src="images/brochure/miniature.png" class="tab"
+                    alt="Brochur-cesca-B35">
+                </a>
+            </figure>
+
+            <figure class="huit"> 
+                <a href="illustration.html" class="tab">
+                    <img src="images/illustration/miniature.png" class="tab"
+                    alt="illustration">
+                </a>
+            </figure>
+            
+            <figure class="neuf">
+                <a href="paradoxe.html" class="tab">
+                    <img src="images/Paradoxe/miniature.png" class="tab"
+                    alt="Paradoxe">
+                </a>
+            </figure>
+
+            <figure class="dix">
+                <a href="mullca.html" class="tab">
+                    <img src="images/mullca 510/miniature.png" class="tab"
+                    alt="Mullca 510">
+                </a>
+            </figure>
+
+
+        </div>
+    </section>
+
+    <!-- Bas de la page : -->
+
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés 
+            <a href="Error-404.html" class="bonus"><i>Bonus+</i></a>
+        </p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            let cursor = document.querySelector(".custom-cursor");
+
+            document.addEventListener('mousemove', function(e){
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            });
+        });
+    </script>
+    
+
+
+</body>
+</html>

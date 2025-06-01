@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    text-align: center;
+    cursor: none;
+}    
+
+.custom-cursor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(55, 255, 0);
+    pointer-events: none;
+    z-index: 99999;
+}
+
+
+/* Images sur la page projets */
+.tab{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    cursor: none;
+    display: inline-block;
+}
+/* :hover = déclencheur (détecteur de souris par rexemple) */ 
+/* :hover == Modifier l’élément au survol ET ::after == Ajouter une surcouche colorée visuelle
+DONC :hover::after == Combiner les deux */
+
+.tab::after{
+    content: "";
+    position: absolute;
+    top: 0px; /* + dans la précision si problème taille de l'image */
+    bottom: 1.8px;
+    left: 0px;
+    right: 0px;
+    /* inset: 0px; */ /* ==> top, bottom, right, left ==> + clair, + lisible, + court ! */ 
+    border: 5px solid rgb(255, 0, 204);
+    border-radius: 2px;
+    opacity: 0;
+    transform: scale(1);
+    transition: all 0.3s ease-out; /* comportement de la vitesse ==> cellui-ci commence vite puis il ralentit */ 
+    /* transition: all 0.3s cubic-bezier() ==> soit cubic-bezier(x1, y1, x2 ,y2) à nous de gérer la courbe
+    https://cubic-bezier.com/ */ 
+    pointer-events: none;
+}
+.tab:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+header {
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Supprime les puces */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement */
+    color: rgb(255, 0, 204); /* Change la couleur du lien */
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+nav a:hover { /* Surbrillance au survol */ 
+    color: rgb(0, 0, 0);
+    cursor: none;
+}
+
+/* CSS page info */
+/* Surbrillance au survol pour le texte info */
+
+.lien-projet {
+    color: #666666;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    cursor: none;
+}
+/* Surbrillance au survol pour le texte info */
+.lien-projet:hover {
+    color: rgb(255, 0, 204); 
+    cursor: none;
+}
+
+
+.lebal{
+    color: #494949;
+    transition: color 0.3s ease;
+    text-decoration: none;
+
+}
+.presentation { /* Pour rubrique info */
+    text-align: center; 
+    line-height: 2p;
+    margin: 0 auto;
+    width: 800px;
+    font-size: 30px;
+    color: #666666;
+    /* cursor: none; */
+
+}
+
+/* Titre */
+.titre {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    font-weight: 400;
+    color: #000000;
+    text-decoration: none ;
+    transition: color 0.3s ease;
+
+}
+
+.titre:hover {
+    color: rgb(55, 255, 0);
+    cursor: none;
+    text-decoration: none;
+}
+.subtitle {
+    font-size: 20px;
+    color: #666666;
+    margin-top: 10px;
+}
+
+
+
+h5 {
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-weight: 400;
+
+}
+
+.portfolio {
+    padding: 60px 20px;
+    height: 80;
+    background-color: #ffffff;
+    cursor: none;
+}
+
+.portfolio h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.grille {
+    display: grid; 
+    grid-template-columns: auto auto; /* 2 colones = auto auto ; 3 colonnes = auto auto auto */
+    grid-template-rows: repeat(3);
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 50px 5px; /*Espace entre les éléments (goutière) */
+    cursor: none;
+}
+
+
+
+  
+.project {
+    width: 280px;
+    text-align: center;
+    object-fit: cover;
+}
+
+
+.project p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+    cursor: none;
+}
+
+/* Selection curseur de la souris */ 
+
+::selection{
+    background-color: rgb(0, 0, 0);
+    color: #f5f5f5;
+}
+
+
+/* Grille de Projets */
+.grille-projet{
+    text-align: center;
+    object-fit: none;
+
+}
+
+/* Texte des Projets 
+On ne peux pas justifier au centre en même temps. 
+Alors on combine : */
+.texte-projet{
+    font-size: 20px;
+    color: #666666;
+    text-align: justify; 
+    max-width: 400px;
+    margin: 0 auto;
+    min-width: 500px; /* alignement du texte sheet */
+}
+
+h2{
+    display: flex;                /* Met l'image et le texte côte à côte */
+    align-items: center;          /* Aligne verticalement le texte avec l'image */
+    padding: 10px;                /* Ajoute un peu d'espace intérieur */
+    width: fit-content;           /* Ajuste la largeur à son contenu */
+}
+
+/* mise en page de l'image page de projet */ 
+.imgprojet{
+    margin-left: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: left; 
+    flex-wrap: wrap; 
+    width: none;
+}
+
+.un1{
+    height: 50%;
+    width: 50%;
+    max-width: 40;
+}
+
+.grille-suptitle{
+    display: grid; 
+    grid-template-columns: auto auto; /* 2 colones = auto auto ; 3 colonnes = auto auto auto */
+    grid-template-rows: repeat(3); /* 3 lignes */
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 50px 5px; /*Espace entre les éléments (goutière) */
+
+
+}
+
+/* pour forcer l'appli alors tape --> !important (cela peut aider) */
+
+.bonus{
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #f5f5f5;
+    text-decoration: none;
+    display: flex; /* display: none; --> pour cacher un élément & retirer de la disposition d doc */ 
+    
+}

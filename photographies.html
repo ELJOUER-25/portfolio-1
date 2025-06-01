@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/photographies</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <main>
+                <h1><a href="projets.html" class="titre">Photographies</h1></a>
+            </main>
+
+            <p class="subtitle">2024 | 2025</p>
+        </main>
+
+    <section class="portfolio">
+        <div class="grille-projet">
+
+            <figure> 
+                <img src="images/photographies/img_prez_01.png" class="tab" style="width: 50%; height:auto;">
+                <img src="images/photographies/img_prez_04_02.png" class="tab" style="width: 30%; height: 50%;"> 
+                <img src="images/photographies/img_prez_03.png" class="tab" style="width: 51%; height:auto;">
+
+                    
+                <main class="texte-projet">
+                    <p> 
+                        Je pratique la photographie pendant mon temps libre.
+                        J'expérimente la photographie de rue, de paysage, de portrait & documentaire depuis plus deux ans.
+                        Je teste le N&B, la couleur, les effets miniatures.
+                        Je retouche rarement mes photographies, je cherche à exploiter au maximum les réglages de mon appareil (Canon M50).
+                        <br> Je partage, notamment mon travail sur 
+                        <a href="https://www.instagram.com/bw_eliot/" class="lien-projet"><i>mon instagram</i></a>.<br>
+                        <br>
+                    </p>        
+                </main> 
+                <img src="images/photographies/img_prez_06_01.png" class="tab" style="width: 50%; height:auto;">
+                <img src="images/photographies/img_prez_05_02.png" class="tab" style="width: 50%; height:auto;">
+ 
+            </figure> 
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

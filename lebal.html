@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/lebal </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1><a href="projets.html" class="titre">LE BAL</h1></a>
+        <p class="subtitle"> 2025 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <img src="images/LEBAL/img_prez_01.png" class="tab" style="width: 70% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+
+                            Nous devions produire une nouvelle identité graphique pour 
+                                <a href="https://www.le-bal.fr" target="_blank" class="lien-projet" class="lebal">
+                                    <i>LE BAL.</i>
+                                </a><br>
+                                Cet espace propose depuis 2010 des expositions autour de la photographie ancienne & contemporaine. <br> 
+                                Pour le lancement fictif de la nouvelle saison, nous devions présenter nos propositions<br> 
+                                sur trois supports :<br> 
+                                <br>
+                                <i>    
+                                    • Une affiche,<br>
+                                    • Un document de visite,<br>
+                                    • Une invitation à envoyer aux visiteurs.<br>
+                                </i><br>
+                            Je suis parti sur un univers graphique full fluo et d'un logo jouant avec les ombres des lettres.  
+                        </p> 
+
+                    </main>
+                </figure> 
+
+            </div>
+        <img src="images/LEBAL/banière_01_01.png" class="tab" style="width: 95% ; height:auto;">    
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

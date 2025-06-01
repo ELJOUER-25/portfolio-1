@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/brochure </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="projets.html" class="titre">Brochure</a>
+        <p class="subtitle"> 2024 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <img src="images/brochure/img_prez_02.png" class="tab" style="width: 70% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+                            <br>
+                            Le but de ce travail était de décrire un artiste designer,
+                            <br> du Bauhaus sur un dépliant libre. 
+                            <br> J’ai choisi Marcel Breuer et sa chaise Cesca B35.
+                            <br> J'ai donc fait un dépliant 2 plis roulés sur du papier 90gr. 
+                            <br>
+                        </p> 
+                    </main>
+                </figure> 
+            </div>
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

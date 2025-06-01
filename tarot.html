@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/tarot </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1><a href="projets.html" class="titre">Cartes de tarot</h1></a>
+        <p class="subtitle"> 2025 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <img src="images/Tarot/img_prez_02.png" class="tab" style="width: 80% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+                            Notre travail était de réaliser <strong>trois cartes de tarot</strong> 
+                            ainsi que le dos de la carte, avec les bonnes dimensions. 
+                            <br>La technique utilisée était libre.
+                            <br>
+                            <strong>J'ai choisi :</strong><br>
+                            <i><br>
+                                • La Justice<br>
+                                • Le Pape<br>
+                                • La Mort<br>
+                            </i>  
+                        </p>
+                        <br>
+
+                        <p class="texte-projet">
+                            Trois cartes, une même intention :<br>
+                            <br>Leurs formes sont construites par des lignes noires et grises verticales, horizontales, parfois plus épaisses comme une architecture abstraite, inspirée des vitraux. Chaque visuel cache subtilement le nom et le chiffre de la carte, pour inviter à la contemplation, comme une œuvre d’art à part entière.
+                        </p>
+                        <br>
+
+                        <p class="texte-projet">
+                            Le rouge, utilisé avec parcimonie, agit comme 
+                            <br> <b>un signal.</b> Il attire l’œil, questionne, crée le contraste : pourquoi ici ? Pourquoi avec le noir ? Une manière d’interpeller, sans tout révéler.
+                        </p>
+                        <br>
+
+                        <p class="texte-projet">
+                            Le dos des cartes reprend ce dialogue graphique en rouge et noir. Il représente une toupie reliée par des fils, symbolisant <b>le temps, le hasard, l’illusion de contrôle.</b> Un clin d'œil involontaire au film Inception, où la toupie devient totem, entre rêve et réalité.
+                        </p>
+                        <br>
+
+                        <p class="texte-projet">
+                            <br>
+                            Chaque carte a son détail, sa signification propre.
+                            <br>Mais toutes partagent cette même volonté : <br>
+                            <br><i>« Voir sans être vu »</i>, quelque chose d’abstrait, de subtil.
+                        </p> 
+                    
+
+                    </main>
+                </figure> 
+            </div>
+        <img src="images/Tarot/img_prez_03.png" class="tab" style="width: 60% ; height:auto;">    
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

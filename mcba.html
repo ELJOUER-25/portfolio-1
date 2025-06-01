@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/mcba </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="projets.html" class="titre"> Édition MCBA</a>
+        <p class="subtitle"> 2025 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <img src="images/MCBA/img_prez_01.png" class="tab" style="width: 70% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+                            <br>
+                            Édition sur deux architectes Fabrizio Barozzi & Alberto Veiga exposant au Musée Cantonal des Beaux-Arts (MCBA).
+                            <br> Cette édition comportant 12 page, a été réalisée en groupe avec 
+                            <a href="https://www.linkedin.com/in/mathis-san-dacheux-tognon-67679b29a/" target="_blank" class="lien-projet">
+                                <i>Mathis</i>
+                            </a> &
+
+                            <a href="https://www.linkedin.com/in/antoine-léger/" target="_blank" class="lien-projet">
+                                <i>Antoine</i>.
+                            </a> 
+
+                            <br>
+                        </p> 
+                    </main>
+                </figure> 
+            </div>
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>

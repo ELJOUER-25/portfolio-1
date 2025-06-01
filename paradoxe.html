@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliotjouan.portfolio/paradoxe </title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="custom-cursor"></div>
+    <div class="::selection"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="info.html"><i>info</i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="projets.html" class="titre"> Paradoxe</a>
+        <p class="subtitle"> 2024 </p>
+    </main>
+
+    <section class="portfolio">
+            <div class="grille">
+
+                <figure class="un" class="imgprojet">
+                    <!-- Mettre image -->
+                    <img src="images/Paradoxe/pardoxe.png" class="tab" style="width: 35% ; height: auto">
+
+                    <main>
+                        <p class="texte-projet">
+                            <br>
+                            Je voulais représenter le passage du 20ème siècle vers le 21ème. Mon image de base était le terrain vague de la Chapelle (Paris 18ème) qui était une référence tant artistique que musicale. Une sorte d'hommage à ce lieu mythique détruit et remplacé par un bâtiment monotone.
+                            <br>
+                            <br>Pour représenter cette idée, j'ai mis en relation l'ancien siècle plutôt "triste, et le nouveau plutôt "agréable", en montrant ainsi deux ambiances différentes.
+                            <br>
+                            <br>Le paradoxe est dans le fait d'avoir mis, pour le 21ème siècle, des nuances de rouge, sanglantes, vives, faisant référence au diable, le passage à la nouvelle ère et les avancées technologiques. Par opposition, le siècle précédent apparaît avec plus de couleurs, car cette époque était plus dynamique que celle d'aujourd'hui.
+                        </p> 
+                    </main>
+                </figure> 
+            </div>
+    </section>
+
+
+    <!-- Bas de la page : -->
+    <footer>
+        <p>© 2025 - Eliot Jouan</p>
+        <p> Tous droits réservés</p>
+    </footer>
+
+    <!-- Script pour le curseur --> 
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        let cursor = document.querySelector(".custom-cursor");
+
+        document.addEventListener('mousemove', function(e){
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+</body>
+</html>
