@@ -4,7 +4,6 @@ const cursor = document.getElementById('cursor');
 const messages = [
     "Hello !",
     "   Bienvenue sur mon site ! :)",
-    "   Chargement des données...",
     "   Vous êtes connecté en tant qu'invité",
     "   Veuillez patienter...",
 ];
@@ -27,7 +26,7 @@ function typeMessage(message, index) {
             setTimeout(() => {
                 cursor.style.display ='none'
                 window.location.href = 'projets.html'; // URL de page d'accueil
-            }, 1500);// 1500 = seconde pour allé sur page acceuil
+            }, 1200);// 1500 = seconde pour allé sur page acceuil
         }
     }
 }
