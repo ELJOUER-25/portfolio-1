@@ -13,7 +13,7 @@ let currentMessage = 0;
 function typeMessage(message, index) {
     if (index < message.length) {
         output.textContent += message.charAt(index);
-        setTimeout(() => typeMessage(message, index + 1), 50);//50 = seonde pour taper les phrases
+        setTimeout(() => typeMessage(message, index + 1), 35);//50 = seonde pour taper les phrases
     } else {
         currentMessage++;
         if (currentMessage < messages.length) {
@@ -26,7 +26,7 @@ function typeMessage(message, index) {
             setTimeout(() => {
                 cursor.style.display ='none'
                 window.location.href = 'projets.html'; // URL de page d'accueil
-            }, 1200);// 1500 = seconde pour allé sur page acceuil
+            }, 1000);// 1500 = seconde pour allé sur page acceuil
         }
     }
 }
