@@ -100,6 +100,9 @@ nav a:hover { /* Surbrillance au survol */
     cursor: none;
 }
 
+.info{
+    font-size: x-large;
+}
 
 .lebal{
     color: #494949;
